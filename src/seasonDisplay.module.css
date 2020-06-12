@@ -1,0 +1,15 @@
+.seasonWinter {
+  height: 100px;
+  width: 100px;
+  background: blue;
+}
+.seasonSummer {
+  height: 100px;
+  width: 100px;
+  background: yellow;
+}
+.seasonCard {
+  flex-grow: 4;
+  height: 50vh;
+  width: 50vw;
+}

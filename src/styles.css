@@ -1,0 +1,16 @@
+.background-yellow {
+  height: 100px;
+  width: 100px;
+  background: yellow;
+}
+.background-blue {
+  height: 100px;
+  width: 100px;
+  background: blue;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
