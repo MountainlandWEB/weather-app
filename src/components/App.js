@@ -55,7 +55,7 @@ class App extends React.Component {
           <SeasonDisplay season={this.state.season} />
           <div className="flex-row">
             <ForecastCard forecast="rain"/>
-            <ForecastCard forecast="partlyCloudy"/>
+            <ForecastCard forecast="partly cloudy"/>
             <ForecastCard forecast="cloudy"/>
             <ForecastCard forecast="sun"/>
             <ForecastCard forecast="sun"/>
