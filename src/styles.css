@@ -8,6 +8,17 @@
   justify-content: center;
   align-items: center;
 }
+.error-display {
+  text-align: center;
+}
+.error-display-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+}
 .season-display {
   text-align: center;
 }
