@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles.css'
 
+import Loader from './Loader'
 import ErrorDisplay from './ErrorDisplay'
 import SeasonDisplay from './SeasonDisplay'
 import ForecastCard from './ForecastCard'
@@ -42,12 +43,7 @@ class App extends React.Component {
   renderContent = () => {
     if (this.state.loading) {
       return (
-        <div className="ui segment">
-          <div className="ui active inverted dimmer">
-            <div className="ui text loader">Loading</div>
-          </div>
-          <p></p>
-        </div>
+        <Loader />
       )
     } else if (this.state.errorMsg) {
       return (
@@ -55,7 +51,18 @@ class App extends React.Component {
       )
     } else {
       return (
-        <SeasonDisplay season={this.state.season} />
+        <>
+          <SeasonDisplay season={this.state.season} />
+          <div className="flex-row">
+            <ForecastCard forecast="rain"/>
+            <ForecastCard forecast="partlyCloudy"/>
+            <ForecastCard forecast="cloudy"/>
+            <ForecastCard forecast="sun"/>
+            <ForecastCard forecast="sun"/>
+            <ForecastCard forecast="sun"/>
+            <ForecastCard forecast="cloudy"/>
+          </div>
+        </>
       )
     }
   }
@@ -64,16 +71,6 @@ class App extends React.Component {
     return (
       <div className="app">
         { this.renderContent() }
-        <div>
-          <ForecastCard />
-          <ForecastCard />
-          <ForecastCard />
-          <ForecastCard />
-          <ForecastCard />
-          <ForecastCard />
-          <ForecastCard />
-          <SeasonDisplay  />
-        </div>
       </div>
     )
   }

@@ -1,16 +1,37 @@
-.background-yellow {
-  height: 100px;
-  width: 100px;
-  background: yellow;
-}
-.background-blue {
-  height: 100px;
-  width: 100px;
-  background: blue;
+.app {
+  height: 100vh;
+  width: 100vw;
 }
 .flex-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.season-display {
+  text-align: center;
+}
+.season-display.winter {
+  background: lightblue;
+}
+.season-display.summer {
+  background: lightyellow;
+}
+.forecast-card {
+  text-align: center;
+  height: 200px;
+  width: 200px;
+}
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

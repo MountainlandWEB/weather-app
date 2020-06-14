@@ -5,7 +5,7 @@ class SeasonDisplay extends React.Component {
   render() {
     let { season } = this.props
     return (
-      <div className="season-display">
+      <div className={"season-display " + season}>
         <div className="flex-row">
           <div className={styles.seasonCard}>
             <i className={ season === 'summer' ? 'snowflake icon' : 'sun icon' }></i>
